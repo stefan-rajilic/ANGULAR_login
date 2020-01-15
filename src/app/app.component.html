@@ -1,0 +1,26 @@
+<ng-container class="body" *ngIf="show">
+  <div class="formular">
+    <div class="box">
+      <div  class="form-fields">
+        <h1>Vítej te!</h1>
+        <form>
+          <input class="prihlaseni" type="text" name="jmeno" placeholder="Jmeno Prijmeni" [(ngModel)]="jmeno"/>
+          <input class="prihlaseni" type="heslo" name="heslo" placeholder="Heslo" [(ngModel)]="heslo"/>
+          
+        </form>
+        <ng-container class="class" *ngIf="hide";>
+          <button id="btn" (click)="clickedButton()">LOGIN</button>
+        </ng-container>
+        <div class="login2">
+          {{login2}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ng-container>
+
+<div class="login">
+    {{login}}
+</div>
+

@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  
+}
+.formular {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formular .box {
+  border: solid 2px;
+  border-color: black;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 450px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+h1{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p{
+  color: black;
+}
+
+input {
+  outline: 0;
+  background: #dbdbdb;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+button{
+  outline: 0;
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+}
+
+.prihlaseni {
+    border: solid 2px;
+    border-color: black;
+}
+
+input[type="heslo"]
+{
+  -webkit-text-security: disc;
+}
+
+.login {
+  margin: 10px;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 200px;
+}
+
+.login2{
+  margin: 10px;
+  color: grey;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    12.5% {transform: translateX(-6px) rotateY(-5deg)}
+    37.5% {transform: translateX(5px) rotateY(4deg)}
+    62.5% {transform: translateX(-3px) rotateY(-2deg)}
+    87.5% {transform: translateX(2px) rotateY(1deg)}
+    100% {transform: translateX(0)}
+  }
+  
+  .shake {
+    animation: shake 400ms ease-in-out;
+  }
+
+  
+
